@@ -1,6 +1,32 @@
 class Pass():
     def ValidPassword(self, passw):
-        """Check the given password
+        """
+        Check the given password
+        >>> c = Pass()
+        >>> c.ValidPassword("hsaT45&*jadsd")
+        True
+        >>> c.ValidPassword("T3&d")
+        False
+        >>> c.ValidPassword("HGmnjsd45ad")
+        False
+        >>> c.ValidPassword("dasmdw%^321")
+        False
+        >>> c.ValidPassword("Avdsad%dadaw")
+        False
+        >>> c.ValidPassword("dasd5 6&*WEda")
+        Traceback (most recent call last):
+            File "C:/Users/Maciek/Desktop/stepiglab6/zad2/src/app.py", line 46, in <module>
+                maciek.ValidPassword("23fseIUH I&*5")
+            File "C:/Users/Maciek/Desktop/stepiglab6/zad2/src/app.py", line 29, in ValidPassword
+                raise ValueError("Password can't contain a blank space")
+        ValueError: Password can't contain a blank space
+        >>> c.ValidPassword(1)
+        Traceback (most recent call last):
+            File "C:/Users/Maciek/Desktop/stepiglab6/zad2/src/app.py", line 53, in <module>
+                maciek.ValidPassword(1)
+            File "C:/Users/Maciek/Desktop/stepiglab6/zad2/src/app.py", line 26, in ValidPassword
+                raise TypeError("Must be a string")
+        TypeError: Must be a string
         """
 
         if type(passw) != str:
@@ -24,8 +50,12 @@ class Pass():
         if number >= 8:
             letters = True
 
-        print(letters,special,bigletter,isnumber)
         if letters and special and bigletter and isnumber:
             return True
         else:
             return False
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

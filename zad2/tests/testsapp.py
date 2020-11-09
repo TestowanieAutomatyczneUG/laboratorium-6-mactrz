@@ -1,6 +1,6 @@
 import unittest
-from src import app
-paass = app.Pass()
+from src.app import Pass
+paass = Pass()
 
 class PasswordTest(unittest.TestCase):
     def test_1_true(self):
