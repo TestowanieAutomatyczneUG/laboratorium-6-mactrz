@@ -11,3 +11,5 @@ class PasswordTest(unittest.TestCase):
         self.assertEqual(paass.ValidPassword("PppPaAcc2dasx"), False)
     def test_4_false_no_upper(self):
         self.assertEqual(paass.ValidPassword("%^*sdasfage2aegse"), False)
+    def test_5_false_no_number(self):
+        self.assertEqual(paass.ValidPassword("%^(macgeFEWdaf"), False)
