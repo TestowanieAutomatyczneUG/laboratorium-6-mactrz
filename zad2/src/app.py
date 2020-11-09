@@ -2,6 +2,10 @@ class Pass():
     def ValidPassword(self, passw):
         """Check the given password
         """
+
+        if type(passw) != str:
+            raise TypeError("Must be a string")
+
         letters = False
         special = False
         bigletter = False

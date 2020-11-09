@@ -22,6 +22,7 @@ class PasswordTest(unittest.TestCase):
         self.assertEqual(paass.ValidPassword("%*4M"), False)
 
     def test_exception_type(self):
-        self.assertRaises(TypeError, paass.ValidPassword(4))
+        with self.assertRaises(TypeError):
+            paass.ValidPassword(1)
 
 
