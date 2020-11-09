@@ -1,7 +1,7 @@
 import unittest
 from src import app
-Pass = app.Pass
+paass = app.Pass()
 
 class PasswordTest(unittest.TestCase):
     def test_1_true(self):
-        self.assertEqual(Pass.ValidPassword("Password2&"), True)
+        self.assertEqual(paass.ValidPassword("Password1$"), True)
