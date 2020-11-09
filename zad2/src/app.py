@@ -13,6 +13,8 @@ class Pass():
         number = 0
         for i in passw:
             number += 1
+            if i.isspace():
+                raise ValueError("Password can't contain a blank space")
             if i.isupper():
                 bigletter = True
             if i.isnumeric():

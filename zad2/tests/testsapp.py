@@ -26,7 +26,7 @@ class PasswordTest(unittest.TestCase):
             paass.ValidPassword(1)
 
     def test_exception_space(self):
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ValueError):
             paass.ValidPassword("Hnad^&7dkaf da")
 
 
