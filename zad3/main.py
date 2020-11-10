@@ -23,7 +23,7 @@ def statement(invoice, plays):
         File "C:/Users/Maciek/Desktop/stepiglab6/zad3/main.py", line 61, in <module>
             print(statement({}, {}))
         File "C:/Users/Maciek/Desktop/stepiglab6/zad3/main.py", line 24, in statement
-            result = f'Statement for {invoice["customer"]}\n'
+            result = f'Statement for {invoice["customer"]}\\n'
     KeyError: 'customer'
     >>> statement()
     Traceback (most recent call last):
