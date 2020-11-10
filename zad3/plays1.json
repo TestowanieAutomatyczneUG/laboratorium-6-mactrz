@@ -1,0 +1,5 @@
+{
+  "hamlet": {"name": "Hamlet", "type": "tragedy"},
+  "someplay": {"name": "Some play", "type": "romance"},
+  "othello": {"name": "Othello", "type": "tragedy"}
+}
